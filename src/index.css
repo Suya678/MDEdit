@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: all;
+}
+
+// This was copied from ChatGPT
+/* Editor base styles */
+.w-md-editor .wmde-markdown,
+.w-md-editor .wmde-markdown ol,
+.w-md-editor .wmde-markdown ul {
+  color: inherit;
+}
+
+/* List styles */
+.w-md-editor .wmde-markdown ol,
+.w-md-editor .wmde-markdown ul {
+  padding-left: 1.25rem;
+  margin-left: 0;
+}
+
+.w-md-editor .wmde-markdown li {
+  display: list-item;
+  list-style-position: outside;
+}
+
+.w-md-editor .wmde-markdown ul {
+  list-style-type: disc;
+}
+
+.w-md-editor .wmde-markdown ol {
+  list-style-type: decimal;
+}
+
+.w-md-editor .wmde-markdown li::marker {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.w-md-editor .wmde-markdown ul ul,
+.w-md-editor .wmde-markdown ol ol,
+.w-md-editor .wmde-markdown ul ol,
+.w-md-editor .wmde-markdown ol ul {
+  padding-left: 1rem;
+}
+
+/* Editor theme variables */
+.w-md-editor {
+  --md-bk-color: var(--b1);
+  --md-toolbar-color: var(--base-200);
+  --color-border-default: var(--base-300);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Base editor styles */
+.w-md-editor,
+.w-md-editor .wmde-markdown {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Code block styles */
+.w-md-editor .wmde-markdown pre {
+  background: var(--base-200) !important;
+  color: var(--base-content) !important;
+  border: 1px solid var(--base-300) !important;
+  border-radius: 0.5rem;
+  padding: 0.72rem 1rem;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02) inset;
+}
+
+/* Inline code styles */
+.w-md-editor .wmde-markdown code {
+  background: var(--base-200) !important;
+  color: var(--base-content) !important;
+  padding: 0.12rem 0.4rem;
+  border-radius: 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    monospace;
+  font-size: 0.92em;
+}
+
+/* Toolbar styles */
+.w-md-editor-toolbar {
+  background-color: var(--base-200) !important;
+  border-color: var(--base-300) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.w-md-editor-toolbar button {
+  color: var(--base-content) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.w-md-editor-toolbar button:hover {
+  background-color: var(--base-300) !important;
+}
+
+/* Preview area */
+.wmde-markdown-var {
+  background-color: var(--base-100) !important;
+  color: var(--base-content) !important;
+}
+/* Hide fullscreen button */
+.w-md-editor-toolbar button[data-name="fullscreen"],
+.w-md-editor-toolbar button[aria-label="Full screen"] {
+  display: none !important;
+}
+
+.w-md-editor .wmde-markdown table {
+  background: white !important;
+}
+
+.w-md-editor .wmde-markdown table th {
+  background: lightgray !important; /* This is a reasonable contrasting color for the th element on a white table */
+  color: black !important;
+}
+
+.w-md-editor .wmde-markdown table td {
+  background: white !important;
+  color: black !important;
+}
