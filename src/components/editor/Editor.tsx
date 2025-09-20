@@ -16,7 +16,6 @@ export default function MarkdownEditor({ visibleDragBar }) {
         value={value}
         onChange={setValue}
         height="100%"
-        visibleDragBar={visibleDragBar}
         overflow={false}
       />
     </div>
@@ -82,14 +81,4 @@ function greet(name) {
 - [ ] Add content
 - [ ] Share with team
 
-## Horizontal Rule
-
----
-
-## Tips
-- Use the toolbar above for quick formatting
-- Preview your changes in real-time
-- Export your document when ready
-
-Need help? Click the help icon in the toolbar or press \`Ctrl/Cmd + H\`.
 `;

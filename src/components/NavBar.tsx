@@ -33,7 +33,7 @@ const NavBar = () => {
           </button>
         </div>
         <div className="ps-4">
-          <a className="text-lg font-bold">Marmalade</a>
+          <a className="text-lg font-bold">MDEdit</a>
         </div>
         <div className="flex grow justify-end px-2">
           <div className="flex items-center gap-5">
